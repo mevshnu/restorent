@@ -96,7 +96,33 @@ public class Main {
     {
         for(int i=0;i< arr.size();i++)
         {
+
             System.out.println("Name:"+arr.get(i).name);
+            int j= (arr.get(i).tea);
+            if(j>0)
+            {
+                System.out.println("tea " + j + " * 10 =" + j * 10);
+            }
+            int o=(arr.get(i).coffee);
+            if(o>0)
+            {
+                System.out.println("coffee " + o + " * 15 =" + o * 15);
+            }
+            int p=(arr.get(i).snacks);
+            if(p>0)
+            {
+                System.out.println("snacks " + p + " * 10 =" + i * 10);
+            }
+            int l=(arr.get(i).idili);
+            if(l>0)
+            {
+                System.out.println("idili " + l + " * 8 =" + l * 8);
+            }
+            int k=(arr.get(i).dosha);
+            if(k>0)
+            {
+                System.out.println("dosha " + k + " * 6 =" + k * 6);
+            }
             System.out.println("sum:"+arr.get(i).sum);
         }
     }
