@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         while (true)
         {
-            System.out.println("Press 1 to generate bill");
+        System.out.println("Press 1 to generate bill");
         System.out.println("press 2 to view Transaction");
         System.out.println("press 3 to exit");
         int z = sc.nextInt();
@@ -49,14 +49,21 @@ public class Main {
         }
         System.out.println("enter no of snacks");
         int snacks = sc.nextInt();
-        if(snacks>0)
-        sum = sum + (snacks *  15);
+        if(snacks>0) {
+            sum = sum + (snacks * 15);
+        }
         System.out.println("enter no of idili");
         int idili = sc.nextInt();
-        sum = sum + (idili *  15);
+        if(idili>0)
+        {
+            sum = sum + (idili * 15);
+        }
         System.out.println("enter no of dosha");
         int dosha = sc.nextInt();
-        sum = sum + (dosha *  15);
+        if (dosha>0)
+        {
+            sum = sum + (dosha * 15);
+        }
         Bills ob = new Bills(name,mobile,tea,coffee,snacks,idili,dosha,sum);
         arr.add(ob);
         System.out.println("successfully added");
