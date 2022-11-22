@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Scanner;
 
+
 public class Main {
     static Scanner sc = new Scanner(System.in);
     static ArrayList<Bills> arr = new ArrayList<>();
@@ -67,23 +68,23 @@ public class Main {
         Bills ob = new Bills(name,mobile,tea,coffee,snacks,idili,dosha,sum);
         arr.add(ob);
         System.out.println("successfully added");
-        if (tea != 0)
+        if (tea > 0)
         {
             System.out.println("tea "+tea+" * 10 ="+tea*10);
         }
-        if (coffee <= 0)
+        if (coffee > 0)
         {
             System.out.println("coffee "+coffee+" * 15 ="+coffee*15);
         }
-        if (snacks <= 0)
+        if (snacks > 0)
         {
-            System.out.println("snacks"+snacks+" * 10 ="+snacks*10);
+            System.out.println("snacks "+snacks+" * 10 ="+snacks*10);
         }
-        if (idili <= 0)
+        if (idili > 0)
         {
-            System.out.println("snacks"+idili+" * 8 ="+idili*8);
+            System.out.println("idili "+idili+" * 8 ="+idili*8);
         }
-        if (dosha <= 0)
+        if (dosha > 0)
         {
             System.out.println("dosha "+dosha+" * 6 ="+dosha*6);
         }
@@ -98,29 +99,6 @@ public class Main {
             System.out.println("Name:"+arr.get(i).name);
             System.out.println("sum:"+arr.get(i).sum);
         }
-    }
-}
-class Bills
-{
-    String name;
-    long mobile;
-    int tea;
-    int coffee;
-    int snacks;
-    int idili;
-    int dosha;
-    int sum;
-
-    public Bills(String name, long mobile, int tea, int coffee, int snacks, int idili, int dosha, int sum)
-    {
-        this.name = name;
-        this.mobile = mobile;
-        this.tea = tea;
-        this.coffee = coffee;
-        this.snacks = snacks;
-        this.idili = idili;
-        this.dosha = dosha;
-        this.sum = sum;
     }
 }
 
